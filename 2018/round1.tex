@@ -1,0 +1,143 @@
+%----------------------------------------------------------------------------------------
+%	Settings and packages
+%----------------------------------------------------------------------------------------
+\documentclass[9pt]{article}
+
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{graphicx,caption,subcaption}
+%\usepackage{amsmath,amssymb,amsfonts,bm,mathrsfs}
+%\usepackage{fullpage}
+%\usepackage{array,enumerate}
+%\usepackage{cite,verbatim}
+%\usepackage{hyperref}
+%\usepackage{fancyhdr}				% together with the next line
+%\pagestyle{fancy}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{ctable}
+\usepackage[landscape,margin=0.25in]{geometry}
+
+\newcommand{\mcn}[2]{\multicolumn{#1}{l}{#2}}	
+\newcommand{\mccn}[2]{\multicolumn{#1}{c}{#2}}\newcommand{\mcl}[1]{\multicolumn{2}{l}{#1}}
+\newcommand{\mclg}[1]{\multicolumn{2}{l}{\gr #1}}\newcommand{\mcc}[1]{\multicolumn{2}{c}{#1}}
+\newcommand{\mccg}[1]{\multicolumn{2}{c}{\gr #1}}\newcommand{\mr}[1]{\multirow{-2}{*}{#1}}
+\definecolor{Gray}{gray}{0.90}
+\newcommand{\gr}{\cellcolor{Gray}}
+
+\newcommand{\thickline}{\specialrule{.1em}{.05em}{.05em} }
+% column colours
+
+\newcolumntype{g}{>{\columncolor{Gray}}l}
+\newcolumntype{w}{>{\columncolor{white}}l}
+
+
+%\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+
+%----------------------------------------------------------------------------------------
+%	Create new commands
+%----------------------------------------------------------------------------------------
+
+% Commands are in LatexCommands.tex. New commands for this file only can be written here.
+%\input{/Applications/TeX/Latex_ancillary/LatexCommands.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	Table
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\bf 2018 Friendly Playoff Hockey Pool}
+
+\begin{table}[h!]
+\begin{tabular}{l g g w w g g w w g g w w g g w w g g w w g g w w g g}
+\rowcolor{black} \mcn{27}{\color{white}\bf Round 1: Division Semi-Finals} \\
+\rowcolor{white}\\
+&  \mccg{Andre}&  \mcc{Andres}&  \mccg{Andrew}&  \mcc{Anthony}&  \mccg{Brian}&  \mcc{David}&  \mccg{Jackson }&  \mcc{Josh}&  \mccg{Kollin}&  \mcc{Kyle}&  \mccg{Michael}&  \mcc{Romulus}&  \mccg{Ron} \\\thickline
+{\bf West} &&&&&&&&&&&&&&&&&&&&&&&&&&\\\hline
+NSH&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+COL & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{6} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{6} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{5} & \mr{NSH} & \mr{4} & \mr{NSH} & \mr{5}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+WPG&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+MIN & \mr{WPG} & \mr{7} & \mr{WPG} & \mr{6} & \mr{MIN} & \mr{5} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{5} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{6} & \mr{WPG} & \mr{5} & \mr{WPG} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+VGK&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+LAK & \mr{VGK} & \mr{7} & \mr{VGK} & \mr{5} & \mr{LAK} & \mr{5} & \mr{LAK} & \mr{6} & \mr{LAK} & \mr{6} & \mr{VGK} & \mr{7} & \mr{VGK} & \mr{4} & \mr{VGK} & \mr{7} & \mr{VGK} & \mr{5} & \mr{VGK} & \mr{6} & \mr{VGK} & \mr{5} & \mr{VGK} & \mr{4} & \mr{VGK} & \mr{7}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+ANA&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+SJS & \mr{ANA} & \mr{6} & \mr{ANA} & \mr{7} & \mr{ANA} & \mr{5} & \mr{ANA} & \mr{6} & \mr{SJS} & \mr{7} & \mr{SJS} & \mr{7} & \mr{SJS} & \mr{6} & \mr{ANA} & \mr{7} & \mr{SJS} & \mr{7} & \mr{ANA} & \mr{6} & \mr{SJS} & \mr{6} & \mr{SJS} & \mr{4} & \mr{SJS} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\
+{\bf East} &&&&&&&&&&&&&&&&&&&&&&&&&&\\\hline
+TBL&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+NJD & \mr{NJD} & \mr{5} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{6} & \mr{NJD} & \mr{5} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{4} & \mr{NJD} & \mr{6} & \mr{TBL} & \mr{5}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+BOS&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+TOR & \mr{TOR} & \mr{6} & \mr{TOR} & \mr{6} & \mr{TOR} & \mr{5} & \mr{BOS} & \mr{6} & \mr{TOR} & \mr{7} & \mr{TOR} & \mr{6} & \mr{BOS} & \mr{7} & \mr{TOR} & \mr{7} & \mr{BOS} & \mr{5} & \mr{TOR} & \mr{7} & \mr{BOS} & \mr{6} & \mr{TOR} & \mr{6} & \mr{TOR} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+WSH&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+CBJ & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{5} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{6} & \mr{CBJ} & \mr{6} & \mr{WSH} & \mr{6} & \mr{CBJ} & \mr{7} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{5} & \mr{WSH} & \mr{5} & \mr{WSH} & \mr{7}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+PIT&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+PHI & \mr{PIT} & \mr{5} & \mr{PIT} & \mr{5} & \mr{PHI} & \mr{5} & \mr{PIT} & \mr{5} & \mr{PIT} & \mr{5} & \mr{PIT} & \mr{6} & \mr{PIT} & \mr{5} & \mr{PIT} & \mr{7} & \mr{PHI} & \mr{6} & \mr{PIT} & \mr{6} & \mr{PIT} & \mr{6} & \mr{PIT} & \mr{4} & \mr{PIT} & \mr{6}\\\hline
+\rowcolor{white}\\
+\rowcolor{black} \mcn{27}{\color{white}\bf Conference Champions} \\
+Western & \mclg{VGK} & \mcl{NSH} & \mclg{MIN} & \mcl{NSH} & \mclg{WPG} & \mcl{WPG} & \mclg{SJS} & \mcl{WPG} & \mclg{NSH} & \mcl{WPG} & \mclg{NSH} & \mcl{WPG} & \mclg{WPG}\\
+Eastern & \mclg{WSH} & \mcl{PIT} & \mclg{TOR} & \mcl{TBL} & \mclg{TBL} & \mcl{CBJ} & \mclg{WSH} & \mcl{TBL} & \mclg{BOS} & \mcl{TBL} & \mclg{WSH} & \mcl{NJD} & \mclg{TOR}\\
+Stanley Cup & \mclg{VGK} & \mcl{PIT} & \mclg{MIN} & \mcl{NSH} & \mclg{TBL} & \mcl{WPG} & \mclg{SJS} & \mcl{TBL} & \mclg{NSH} & \mcl{WPG} & \mclg{TBL} & \mcl{NJD} & \mclg{NSH}
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+    \begin{minipage}[t]{.4\linewidth}
+    	{\bf Points}\\
+		\begin{tabular}{l l}
+			If correct team chosen:	& $9 - |P-C|$\\
+			If incorrect team chosen:	& $P+C-8$\\
+			Western/Eastern Conference champion:	& 3\\
+			Stanley Cup champion:		& 3\\
+			Where $P$ is the predicted number of games&\\
+			Where $C$ is the correct number of games&
+		\end{tabular}
+    \end{minipage}
+    \begin{minipage}[t]{.6\linewidth}
+    	{\bf Number of picks per team:}\\
+\begin{tabular}{lc | lc | lc | lc | lc | lc | lc | lc }
+NSH&13&WPG&12&VGK&10&ANA&6&TBL&10&BOS&4&WSH&11&PIT&11\\
+COL&0&MIN&1&LAK&3&SJS&7&NJD&3&TOR&9&CBJ&2&PHI&2\\
+        \end{tabular}
+    \end{minipage}
+\end{table}
+
+
+\begin{table}[!htb]
+    \begin{minipage}[t]{.3\linewidth}
+        \vspace{0.5cm}
+Correct team Points\\
+\begin{tabular}{c l | c c c c }
+\mccn{2}{} & \mccn{4}{Predicted}\\
+ & & 4 & 5 & 6 & 7\\\cline{2-6}
+\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Correct}}}&4 & 9 & 8 & 7 & 6\\
+&5 & 8 & 9 & 8 & 7\\
+&6 & 7 & 8 & 9 & 8\\
+&7 & 6 & 7 & 8 & 9
+        \end{tabular}
+    \end{minipage}
+        \begin{minipage}[t]{.3\linewidth}
+        \vspace{0.5cm}
+Incorrect team Points\\
+\begin{tabular}{c l | c c c c }
+\mccn{2}{} & \mccn{4}{Predicted}\\
+ & & 4 & 5 & 6 & 7\\\cline{2-6}
+\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Correct}}}&4 & 0 & 1 & 2 & 3\\
+&5 & 1 & 2 & 3 & 4\\
+&6 & 2 & 3 & 4 & 5\\
+&7 & 3 & 4 & 5 & 6
+        \end{tabular}
+    \end{minipage}
+\end{table}
+\end{document}
