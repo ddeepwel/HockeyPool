@@ -1,0 +1,141 @@
+%----------------------------------------------------------------------------------------
+%	Settings and packages
+%----------------------------------------------------------------------------------------
+\documentclass[10pt]{article}
+
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{graphicx,caption,subcaption}
+%\usepackage{amsmath,amssymb,amsfonts,bm,mathrsfs}
+%\usepackage{fullpage}
+%\usepackage{array,enumerate}
+%\usepackage{cite,verbatim}
+%\usepackage{hyperref}
+%\usepackage{fancyhdr}				% together with the next line
+%\pagestyle{fancy}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{ctable}
+\usepackage[landscape,margin=0.25in,legalpaper]{geometry}
+
+\newcommand{\mcn}[2]{\multicolumn{#1}{l}{#2}}	
+\newcommand{\mccn}[2]{\multicolumn{#1}{c}{#2}}
+\newcommand{\mcl}[1]{\multicolumn{2}{l}{#1}}
+\newcommand{\mclg}[1]{\multicolumn{2}{l}{\gr #1}}
+\newcommand{\mcc}[1]{\multicolumn{2}{c}{#1}}
+\newcommand{\mccg}[1]{\multicolumn{2}{c}{\gr #1}}
+\newcommand{\mr}[1]{\multirow{-2}{*}{#1}}
+\definecolor{Gray}{gray}{0.90}
+\newcommand{\gr}{\cellcolor{Gray}}
+
+\newcommand{\thickline}{\specialrule{.1em}{.05em}{.05em} }
+% column colours
+
+\newcolumntype{g}{>{\columncolor{Gray}}l}
+\newcolumntype{w}{>{\columncolor{white}}l}
+
+
+%\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+
+%----------------------------------------------------------------------------------------
+%	Create new commands
+%----------------------------------------------------------------------------------------
+
+% Commands are in LatexCommands.tex. New commands for this file only can be written here.
+%\input{/Applications/TeX/Latex_ancillary/LatexCommands.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	Table
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\bf 2020 Friendly Playoff Hockey Pool}
+
+\begin{table}[h!]
+\begin{tabular}{l g g w w g g w w g g w w g g w w g g w w g g w w g g w w g g w w g g}
+\rowcolor{black} \mcn{35}{\color{white}\bf Round 1: Division Semi-Finals} \\
+\rowcolor{white}\\
+&  \mccg{Alisha K}&  \mcc{Alita D}&  \mccg{Andre D}&  \mcc{Andrew N}&  \mccg{Anthony C}&  \mcc{Brandon P}&  \mccg{Brian M}&  \mcc{David D}&  \mccg{Jack L}&  \mcc{Jon M}&  \mccg{Josh H}&  \mcc{Kollin H}&  \mccg{Kyle L}&  \mcc{Mark D}&  \mccg{Nathan S}&  \mcc{Ron K}&  \mccg{Tom K} \\\thickline
+{\bf West} &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\\hline
+VGK&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+CHI & \mr{CHI} & \mr{5} & \mr{VGK} & \mr{5} & \mr{VGK} & \mr{5} & \mr{CHI} & \mr{5} & \mr{VGK} & \mr{6} & \mr{CHI} & \mr{4} & \mr{VGK} & \mr{5} & \mr{CHI} & \mr{6} & \mr{VGK} & \mr{6} & \mr{VGK} & \mr{5} & \mr{VGK} & \mr{6} & \mr{CHI} & \mr{6} & \mr{VGK} & \mr{6} & \mr{VGK} & \mr{5} & \mr{VGK} & \mr{6} & \mr{VGK} & \mr{7} & \mr{VGK} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+COL&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+ARI & \mr{COL} & \mr{4} & \mr{COL} & \mr{6} & \mr{COL} & \mr{5} & \mr{ARI} & \mr{5} & \mr{COL} & \mr{5} & \mr{ARI} & \mr{5} & \mr{COL} & \mr{5} & \mr{COL} & \mr{5} & \mr{COL} & \mr{6} & \mr{COL} & \mr{5} & \mr{COL} & \mr{5} & \mr{COL} & \mr{6} & \mr{COL} & \mr{6} & \mr{COL} & \mr{5} & \mr{COL} & \mr{5} & \mr{COL} & \mr{6} & \mr{ARI} & \mr{7}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+DAL&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+CGY & \mr{DAL} & \mr{6} & \mr{CGY} & \mr{5} & \mr{DAL} & \mr{7} & \mr{CGY} & \mr{5} & \mr{CGY} & \mr{6} & \mr{DAL} & \mr{5} & \mr{CGY} & \mr{7} & \mr{DAL} & \mr{6} & \mr{CGY} & \mr{6} & \mr{DAL} & \mr{6} & \mr{CGY} & \mr{6} & \mr{DAL} & \mr{5} & \mr{CGY} & \mr{7} & \mr{CGY} & \mr{7} & \mr{DAL} & \mr{4} & \mr{CGY} & \mr{7} & \mr{CGY} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+STL&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+VAN & \mr{VAN} & \mr{4} & \mr{STL} & \mr{6} & \mr{VAN} & \mr{7} & \mr{VAN} & \mr{5} & \mr{STL} & \mr{5} & \mr{STL} & \mr{4} & \mr{STL} & \mr{6} & \mr{STL} & \mr{6} & \mr{STL} & \mr{6} & \mr{STL} & \mr{4} & \mr{VAN} & \mr{7} & \mr{STL} & \mr{7} & \mr{VAN} & \mr{6} & \mr{STL} & \mr{6} & \mr{STL} & \mr{6} & \mr{VAN} & \mr{4} & \mr{VAN} & \mr{7}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\
+{\bf East} &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\\hline
+PHI&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+MTL & \mr{MTL} & \mr{4} & \mr{MTL} & \mr{5} & \mr{MTL} & \mr{5} & \mr{MTL} & \mr{5} & \mr{MTL} & \mr{6} & \mr{MTL} & \mr{6} & \mr{PHI} & \mr{5} & \mr{PHI} & \mr{7} & \mr{PHI} & \mr{6} & \mr{PHI} & \mr{5} & \mr{PHI} & \mr{5} & \mr{MTL} & \mr{6} & \mr{MTL} & \mr{7} & \mr{PHI} & \mr{5} & \mr{PHI} & \mr{5} & \mr{PHI} & \mr{6} & \mr{MTL} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+TBL&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+CBJ & \mr{TBL} & \mr{5} & \mr{CBJ} & \mr{5} & \mr{TBL} & \mr{6} & \mr{CBJ} & \mr{5} & \mr{TBL} & \mr{6} & \mr{CBJ} & \mr{5} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{6} & \mr{CBJ} & \mr{6} & \mr{CBJ} & \mr{6} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{6} & \mr{TBL} & \mr{5} & \mr{TBL} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+WSH&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+NYI & \mr{NYI} & \mr{6} & \mr{NYI} & \mr{6} & \mr{WSH} & \mr{7} & \mr{NYI} & \mr{5} & \mr{NYI} & \mr{6} & \mr{WSH} & \mr{5} & \mr{WSH} & \mr{7} & \mr{WSH} & \mr{7} & \mr{NYI} & \mr{6} & \mr{WSH} & \mr{6} & \mr{NYI} & \mr{6} & \mr{WSH} & \mr{5} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{5} & \mr{NYI} & \mr{5} & \mr{WSH} & \mr{6} & \mr{WSH} & \mr{6}\\\hline
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\\hline
+BOS&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+CAR & \mr{BOS} & \mr{6} & \mr{CAR} & \mr{5} & \mr{CAR} & \mr{7} & \mr{CAR} & \mr{5} & \mr{BOS} & \mr{6} & \mr{BOS} & \mr{5} & \mr{BOS} & \mr{6} & \mr{BOS} & \mr{5} & \mr{CAR} & \mr{6} & \mr{CAR} & \mr{7} & \mr{CAR} & \mr{7} & \mr{BOS} & \mr{6} & \mr{CAR} & \mr{6} & \mr{CAR} & \mr{7} & \mr{CAR} & \mr{5} & \mr{BOS} & \mr{6} & \mr{CAR} & \mr{7}\\\hline
+\rowcolor{white}\\
+\rowcolor{black} \mcn{35}{\color{white}\bf Conference Champions} \\
+Western & \mclg{STL} & \mcl{VGK} & \mclg{VGK} & \mcl{STL} & \mclg{STL} & \mcl{STL} & \mclg{COL} & \mcl{DAL} & \mclg{COL} & \mcl{VGK} & \mclg{COL} & \mcl{CHI} & \mclg{VAN} & \mcl{VGK} & \mclg{COL} & \mcl{VAN} & \mclg{VGK}\\
+Eastern & \mclg{MTL} & \mcl{NYI} & \mclg{TBL} & \mcl{NYI} & \mclg{TBL} & \mcl{WSH} & \mclg{BOS} & \mcl{PHI} & \mclg{CAR} & \mcl{TBL} & \mclg{PHI} & \mcl{BOS} & \mclg{MTL} & \mcl{PHI} & \mclg{PHI} & \mcl{TBL} & \mclg{CAR}\\
+Stanley & \mclg{MTL} & \mcl{STL} & \mclg{TBL} & \mcl{CAR} & \mclg{VGK} & \mcl{WSH} & \mclg{COL} & \mcl{BOS} & \mclg{WSH} & \mcl{TBL} & \mclg{COL} & \mcl{CHI} & \mclg{VAN} & \mcl{VGK} & \mclg{COL} & \mcl{TBL} & \mclg{VGK}
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+    \begin{minipage}[t]{.27\linewidth}
+    	{\bf Points}\\
+		\begin{tabular}{l l}
+			If correct team chosen:	& $9 - |P-C|$\\
+			If incorrect team chosen:	& $P+C-8$\\
+			Western/Eastern Conference champion:	& 5\\
+			Stanley Cup champion:		& 5\\
+			Where $P$ is the predicted number of games&\\
+			Where $C$ is the correct number of games&
+		\end{tabular}
+	\end{minipage}
+	\begin{minipage}[t]{0.12\linewidth}
+	Correct team Points\\
+	\begin{tabular}{c l | c c c c }
+		\mccn{2}{} & \mccn{4}{Predicted}\\
+		& & 4 & 5 & 6 & 7\\\cline{2-6}
+		\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Actual}}}&4 & 9 & 8 & 7 & 6\\
+		&5 & 8 & 9 & 8 & 7\\
+		&6 & 7 & 8 & 9 & 8\\
+		&7 & 6 & 7 & 8 & 9
+	\end{tabular}
+	\end{minipage}
+	\begin{minipage}[t]{0.12\linewidth}
+	Incorrect team Points\\
+	\begin{tabular}{c l | c c c c }
+		\mccn{2}{} & \mccn{4}{Predicted}\\
+		& & 4 & 5 & 6 & 7\\\cline{2-6}
+		\parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Actual}}}&4 & 0 & 1 & 2 & 3\\
+		&5 & 1 & 2 & 3 & 4\\
+		&6 & 2 & 3 & 4 & 5\\
+		&7 & 3 & 4 & 5 & 6
+	\end{tabular}
+	\end{minipage}
+    \begin{minipage}[t]{.45\linewidth}
+    	{\bf Number of picks per team:}\\
+\begin{tabular}{lc | lc | lc | lc | lc | lc | lc | lc }
+VGK&12&COL&14&DAL&7&STL&10&PHI&8&TBL&12&WSH&10&BOS&7\\
+CHI&5&ARI&3&CGY&10&VAN&7&MTL&9&CBJ&5&NYI&7&CAR&10\\
+        \end{tabular}
+    \end{minipage}
+\end{table}
+
+\end{document}
