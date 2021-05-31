@@ -15,6 +15,10 @@ def make_latex_file(year, rnd):
     
     # read the csv file with the data for the round
     df = read_round(year, rnd)
+    if rnd == 1:
+        df1 = df
+    else:
+        df1 = read_round(year, 1)
     
     # drop the results row and sort by name (index)
     df.drop(index='Results', inplace=True)
@@ -132,8 +136,10 @@ def make_latex_file(year, rnd):
             table_west += teams_west[nn]
             table_east += teams_east[nn]
             for ii in range(N_people):
-                table_west += " & \\mr{"+stn(df.iloc[ii]["T"+str(nn//2+1)])+"} & \\mr{"+str(df.iloc[ii]["G"+str(nn//2+1)])+"}"
-                table_east += " & \\mr{"+stn(df.iloc[ii]["T"+str(nn//2+5)])+"} & \\mr{"+str(df.iloc[ii]["G"+str(nn//2+5)])+"}"
+                table_west += " & \\mr{"+stn(df.iloc[ii]["T"+str(nn//2+1            )])+\
+                    "} & \\mr{"+str(df.iloc[ii]["G"+str(nn//2+1           )])+"}"
+                table_east += " & \\mr{"+stn(df.iloc[ii]["T"+str(nn//2++1+2**(3-rnd))])+\
+                    "} & \\mr{"+str(df.iloc[ii]["G"+str(nn//2+1+2**(3-rnd))])+"}"
                 if ii == N_people - 1:
                     table_west += "\\\\\\hline\n"
                     table_east += "\\\\\\hline\n"
@@ -154,15 +160,15 @@ def make_latex_file(year, rnd):
     schamp = "Stanley Cup"
 
     # individual picks for the conference champions
-    for ii in range(N_people):
+    for ii, name in zip(range(N_people), df.index):
         if ii%2 == 0:
-            wchamp += " & \\mclg{"+stn(df.iloc[ii]["WCC"])+"}"
-            echamp += " & \\mclg{"+stn(df.iloc[ii]["ECC"])+"}"
-            schamp += " & \\mclg{"+stn(df.iloc[ii]["SCC"])+"}"
+            wchamp += " & \\mclg{"+stn(df1.loc[name]["WCC"])+"}"
+            echamp += " & \\mclg{"+stn(df1.loc[name]["ECC"])+"}"
+            schamp += " & \\mclg{"+stn(df1.loc[name]["SCC"])+"}"
         else:
-            wchamp += " & \\mcl{"+stn(df.iloc[ii]["WCC"])+"}"
-            echamp += " & \\mcl{"+stn(df.iloc[ii]["ECC"])+"}"
-            schamp += " & \\mcl{"+stn(df.iloc[ii]["SCC"])+"}"
+            wchamp += " & \\mcl{"+stn(df1.loc[name]["WCC"])+"}"
+            echamp += " & \\mcl{"+stn(df1.loc[name]["ECC"])+"}"
+            schamp += " & \\mcl{"+stn(df1.loc[name]["SCC"])+"}"
     wchamp += "\\\\\n"
     echamp += "\\\\\n"
     schamp += "\n"
